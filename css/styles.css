@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700,900&display=swap');
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --background: #FFCC00;
+}
+
+header {
+    background: var(--background);
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.hamburger {
+    width: 40px;
+    cursor: pointer;
+}
+
+.logo {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    margin-left: 1em;
+    color: white;
+    font-size: 18px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    height: 100%;
+    display: flex;
+}
+
+.logo-link {
+    text-decoration: none;
+}
+
+.nav-toggle {
+    z-index: -1;
+    display: none;
+}
+
+.nav-toggle-label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 1em;
+    height: 40px;
+    margin-top: 6px;
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: var(--background);
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 400ms ease-in-out;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    margin-bottom: 1em;
+    margin-left: 1em;
+}
+
+nav a {
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: opacity 150ms ease-in-out;
+}
+
+nav a:hover {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.nav-toggle:checked~nav {
+    transform: scale(1, 1);
+}
+
+.nav-toggle:checked~nav a {
+    opacity: 1;
+    transition: opacity 250ms ease-in-out 250ms;
+}
+
+@media screen and (min-width: 800px) {
+    .nav-toggle-label {
+        display: none;
+    }
+    .logo {
+        float: left;
+        width: 19%;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    nav {
+        position: relative;
+        text-align: right;
+        transition: none;
+        transform: scale(1, 1);
+        background: none;
+        top: initial;
+        left: initial;
+        width: 50%;
+        float: right;
+        padding-top: 30px;
+        /* end Edge support stuff */
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    nav ul {
+        display: flex;
+    }
+    nav .list {
+        margin-right: 1em;
+        margin-left: 1em;
+        margin-bottom: 2em;
+        margin-top: 2em;
+    }
+    nav li {
+        margin-top: 2em;
+        margin-bottom: 0em;
+    }
+    nav .profile {
+        margin-top: 2em;
+        margin-bottom: 0em;
+        margin-left: 5em;
+    }
+    nav a {
+        opacity: 1;
+        position: relative;
+    }
+    nav a::before {
+        content: '';
+        display: block;
+        background: black;
+        position: absolute;
+        left: 0;
+        right: 0;
+        transform: scale(0, 1);
+        transition: transform ease-in-out 250ms;
+    }
+    nav a:hover::before {
+        transform: scale(1, 1);
+    }
+    .icon-background {
+        color: #c0ffc0;
+    }
+    /* styles for the intials circle for profile */
+
+    /* http://caniuse.com/#search=variables */
+    :root {
+        --avatar-size: 2.5em;
+        /* change this value anything, e.g., 100px, 10rem, etc. */
+    }
+    .circle {
+        background-color: #006699;
+        border-radius: 50%;
+        height: 2.5em;
+        text-align: center;
+        width: var(--avatar-size);
+    }
+    .initials {
+        font-size: calc(var(--avatar-size) / 2.2);
+        /* 50% of parent */
+        line-height: 1;
+        position: relative;
+        top: calc(var(--avatar-size) / 4);
+        /* 25% of parent */
+    }
+    /* end of initials styles */
+ 
+    /* start of styles for font awesome icon & backgrouds */
+    .icon-background1 {
+        color: #006699;
+    }
+    .icon-background2 {
+        color: #ffffc0;
+    }
+    .icon-background3 {
+        color: #c0ffff;
+    }
+    .icon-background4 {
+        color: #c0ffc0;
+    }
+    .icon-background6 {
+        color: #40c040;
+    }
+    .icon-background5 {
+        color: #c0c0ff;
+    }
+    .calendar-text {
+        margin-top: .1em;
+    }
+    .circle-icon2 {
+        background: #ffc0c0;
+        padding: 30px;
+        border-radius: 20%;
+    }
+    .circle-icon {
+        background: #ffc0c0;
+        width: 100px;
+        height: 100px;
+        border-radius: 25%;
+        text-align: center;
+        line-height: 100px;
+        vertical-align: middle;
+        padding: 30px;
+    }
+
+    /* end of font awesom icon styles */
+}
