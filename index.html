@@ -118,15 +118,176 @@ body {margin-top: 0em}
   <!-- End of code for side nav -->
 
   <!-- Start of code for wrapper -->
-  <div class="container-fluid" style=" background-image: url(&quot;https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60&quot;); background-size: cover; background-repeat: no-repeat; background-attachment: scroll; background-position: center center; padding-top: 120px;"> <div class="box"> </div>
-  <div class="box"></div>
+  <div class="container-fluid" > 
+  <div class="row" style=" background-image: url(&quot;https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60&quot;); background-size: cover; background-repeat: no-repeat; background-attachment: scroll; background-position: center center; padding-top: 120px;height:600px;"> </div>
+  <div class="row" style="background:white;height:600px;">
+  <div class="col-md-6" style="border: 2px solid yellow;"><!DOCTYPE html>
+<html>
+<head>
+<style>
+* {box-sizing: border-box;}
+ul {list-style-type: none;}
+body {font-family: Verdana, sans-serif;}
+
+.month {
+  padding: 15px 10px;
+  margin-top:10px;
+  width: 100%;
+  background: white;
+  text-align: center;
+  font-weight:bold;
+  
+}
+
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color:yellow;
+  font-size: 25px;
+  text-transform: ;
+  letter-spacing: 3px;
+}
+
+.month .prev {
+  float: left;
+  padding-top:0px;
+}
+
+.month .next {
+  float: right;
+  padding-top: 0px;
+}
+
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color:white;
+  
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: yellow;
+  text-align: center;
+}
+
+.days {
+  padding: 10px 0;
+  background: white;
+  margin: 0;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size:12px;
+  color: black;
+  
+}
+
+.days li .active {
+  padding: 5px;
+  background: yellow;
+  color: black!important;
+  border-radius:50%;
+}
+
+/* Add media queries for smaller screens */
+@media screen and (max-width:720px) {
+  .weekdays li, .days li {width: 13.1%;}
+}
+
+@media screen and (max-width: 420px) {
+  .weekdays li, .days li {width: 12.5%;}
+  .days li .active {padding: 2px;}
+}
+
+@media screen and (max-width: 290px) {
+  .weekdays li, .days li {width: 12.2%;}
+}
+</style>
+</head>
+
+<body >
+
+
+
+<div class="month">      
+  <ul>
+    <li class="prev">&#10094;</li>
+    <li class="next">&#10095;</li>
+    <li>
+      August
+      <span style="font-size:18px">2017</span>
+    </li>
+  </ul>
+</div>
+
+<ul class="weekdays">
+  <li>Mo</li>
+  <li>Tu</li>
+  <li>We</li>
+  <li>Th</li>
+  <li>Fr</li>
+  <li>Sa</li>
+  <li>Su</li>
+</ul>
+
+<ul class="days">  
+  <li>1</li>
+  <li>2</li>
+  <li>3</li>
+  <li>4</li>
+  <li>5</li>
+  <li>6</li>
+  <li>7</li>
+  <li>8</li>
+  <li>9</li>
+  <li><span class="active">10</span></li>
+  <li>11</li>
+  <li>12</li>
+  <li>13</li>
+  <li>14</li>
+  <li>15</li>
+  <li>16</li>
+  <li>17</li>
+  <li>18</li>
+  <li>19</li>
+  <li>20</li>
+  <li>21</li>
+  <li>22</li>
+  <li>23</li>
+  <li>24</li>
+  <li>25</li>
+  <li>26</li>
+  <li>27</li>
+  <li>28</li>
+  <li>29</li>
+  <li>30</li>
+  <li>31</li>
+</ul>
+
+</body>
+</html>
+
+</div>
+  <div class="col-md-6"></div>
+  </div>
   </div>
 <br />
   <!-- End of code for wrapper-->
 
   <!-- Start of code for the  update strap section -->
-
   
+
+
   <!-- End of code for the update strap section -->
 
 </body>
