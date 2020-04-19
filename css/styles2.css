@@ -1,3 +1,6 @@
+body{
+    background:#F5F5F5
+}
 .container {
   display: flex;
   flex-direction: row;
@@ -9,15 +12,15 @@
 }
 .side-nav {
   background-color:#F5F5F5;
-  width: 43vw;
+  width: 48vw;
   height:290vh;
   
   
 }
 .info {
   background-color:red;
-  width: 48vw;
-  height: 290vh;
+  width: 100vw;
+ 
 }
 .fluid {
   
@@ -58,7 +61,7 @@ header {
         
         .icon-bar a:hover {
             background-color: #FCEE21;
-            width: 43vw;
+           
         }
 
 
