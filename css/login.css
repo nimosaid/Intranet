@@ -49,12 +49,13 @@ a {
 .input-email,
 .input-password {
   width: 100%;
-  background: white;
+  background: rgb(232, 240, 254) ;
   border-radius: 0px;
   margin: 4px 0 8px 0;
   padding: 0px;
   float: left;
   display: flex;
+  color:#035385;
 }
 .icon {
   padding: 4px;
